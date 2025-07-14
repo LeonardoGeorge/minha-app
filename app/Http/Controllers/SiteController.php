@@ -13,28 +13,15 @@ class SiteController extends Controller
         // Por exemplo, buscar dados do banco de dados ou processar informações
         // Mas por enquanto, vamos apenas retornar a view 'welcome'
             
-        $nome = 'Leonardo';
-        
-
-        $data = [
-            'name' => $nome,
+         
+        $qualquer_coisa
+         = [
+            'name' => 'Leonardo',
+       
         ];
 
-        return view('Bem vindo', $data);
-
-    
+        return view('Bem vindo', $qualquer_coisa); 
     }
-    public function exit()
-    {
-        return view('exit');
-    }
-    public function users(request $r) {
-        $data = [
-            'quantidade' => $r->qnt
-        ];
-        return view('users', $data);
-    }
-
     
 
 }
